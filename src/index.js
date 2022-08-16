@@ -1,12 +1,8 @@
-function currentTime(timeStemp)
 let li = document.querySelector("#current-hour");
-let currentTime = new Date(timeStemp);
+let currentTime = new Date();
 let hours = currentTime.getHours();
-if (hours < 10) {
-  hours = `0${hours}`;
-}
 let minutes = currentTime.getMinutes();
-
+let day = currentTime.getDay();
 let days = [
   "Sunday",
   "Monday",
@@ -16,11 +12,10 @@ let days = [
   "Friday",
   "Saturday",
 ];
-let day = days[date.getDay()];
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
-return `${day} ${hours}: ${minutes}`;
+li.innerHTML = `${days[day]} ${hours}: ${minutes}`;
 
 function displayWeatherNow(response) {
   document.querySelector("#new-city").innerHTML = response.data.name;

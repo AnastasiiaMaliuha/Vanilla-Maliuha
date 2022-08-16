@@ -23,7 +23,10 @@ li {
   line-height: 1;
   list-style: none;
 }
-
+button {
+  margin-left: 20px auto;
+  margin-right: auto;
+}
 .weather-app {
   border: 1px solid #cbead0;
   padding: 15px;
@@ -44,7 +47,7 @@ li {
 }
 
 .temperature {
-  color: rgb(96, 96, 98);
+  color: rgb(93, 93, 97);
   font-size: 64px;
   font-weight: 400;
   line-height: 1;
@@ -52,7 +55,7 @@ li {
 
 .units {
   position: relative;
-  top: -34px;
+  top: 4px;
 }
 
 .search-form {

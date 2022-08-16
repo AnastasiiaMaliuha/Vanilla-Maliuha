@@ -30,6 +30,10 @@ button {
   margin-left: 20px auto;
   margin-right: auto;
 }
+small {
+  display: block;
+  text-align: center;
+}
 .weather-app {
   border: 1px solid #9d9d9d;
   padding: 15px;

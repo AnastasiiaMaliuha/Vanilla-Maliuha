@@ -31,16 +31,12 @@ button {
   margin-right: auto;
 }
 .weather-app {
-  border: 1px solid #cbead0;
+  border: 1px solid #9d9d9d;
   padding: 15px;
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
-  background: linear-gradient(
-    169deg,
-    rgb(238, 252, 235) 0%,
-    rgb(247, 246, 250) 75%
-  );
+  background: radial-gradient(rgb(255, 255, 255) 0%, rgb(212, 211, 211) 97%);
 }
 
 .weather-icon {

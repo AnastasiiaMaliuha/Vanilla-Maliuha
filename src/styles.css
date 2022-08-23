@@ -69,11 +69,11 @@ small {
   text-align: center;
   color: rgb(48, 45, 45);
 }
-.weather-forecasr-date {
+.weather-forecast-date {
   font-size: 15px;
 }
 .weather-forecast-temeratures {
-  font-size: 12px;
+  font-size: 13px;
 }
 .weather-forecast-temp-min {
   opacity: 0, 3;

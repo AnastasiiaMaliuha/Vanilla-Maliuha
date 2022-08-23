@@ -20,6 +20,33 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = `<div class="row">`;
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+              <div class="weather-forecast-date">${day}</div>
+              <img
+                src="https://e7.pngegg.com/pngimages/402/621/png-clipart-sun-sun-sunlight.png"
+                alt=""
+                width="25"
+              />
+              <div class="weather-forecast-temeratures">
+                <span class="weather-forecast-temp-max">18°</span>
+                <span class="weather-forecast-temp-min">12°</span></div>
+              </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+displayForecast();
+
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();

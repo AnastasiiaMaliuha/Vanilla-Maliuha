@@ -64,3 +64,17 @@ small {
 .search-form {
   margin-bottom: 20px;
 }
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(48, 45, 45);
+}
+.weather-forecasr-date {
+  font-size: 15px;
+}
+.weather-forecast-temeratures {
+  font-size: 12px;
+}
+.weather-forecast-temp-min {
+  opacity: 0, 3;
+}

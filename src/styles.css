@@ -65,12 +65,13 @@ small {
   margin-bottom: 20px;
 }
 .weather-forecast {
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
   color: rgb(48, 45, 45);
 }
 .weather-forecast-date {
   font-size: 15px;
+  margin-top: 10px;
 }
 .weather-forecast-temeratures {
   font-size: 13px;

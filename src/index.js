@@ -52,7 +52,7 @@ function displayForecast(response) {
               <div class="weather-forecast-temeratures">
                 <span class="weather-forecast-temp-max">${Math.round(
                   forecastDay.temp.max
-                )}°</span>
+                )}°/</span>
                 <span class="weather-forecast-temp-min">${Math.round(
                   forecastDay.temp.min
                 )}°</span></div>
@@ -106,6 +106,12 @@ function find(event) {
 let formSearch = document.querySelector("#form-search");
 formSearch.addEventListener("submit", find);
 
+function search(city) {
+  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeatherNow);
+}
+
 function searchLocation(position) {
   let apiKey = "f58fc7cca90e018da558c0c544af64a8";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
@@ -118,3 +124,4 @@ function getCurrent(event) {
 }
 let button = document.querySelector("#current-button");
 button.addEventListener("click", getCurrent);
+search("Vancouver");

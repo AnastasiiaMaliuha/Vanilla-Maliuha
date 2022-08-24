@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  color: #7c7c7c;
+  color: #6e6e6e;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -51,7 +51,7 @@ small {
 
 .temperature {
   color: rgb(93, 93, 97);
-  font-size: 64px;
+  font-size: 55px;
   font-weight: 400;
   line-height: 1;
 }
@@ -64,18 +64,26 @@ small {
 .search-form {
   margin-bottom: 20px;
 }
+
 .weather-forecast {
+  font-weight: 200;
   margin-top: 40px;
+  margin-bottom: 5px;
+  padding: auto;
   text-align: center;
-  color: rgb(48, 45, 45);
+  color: rgb(72, 72, 72);
 }
+
 .weather-forecast-date {
-  font-size: 15px;
-  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.5;
 }
-.weather-forecast-temeratures {
-  font-size: 13px;
+
+.weather-forecast-temp-max {
+  color: #7c7c7c;
 }
+
 .weather-forecast-temp-min {
-  opacity: 0, 3;
+  font-size: 16px;
+  color: #9d9d9d;
 }
